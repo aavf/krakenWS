@@ -7,8 +7,7 @@ python3 -m venv venv
 
 . venv/bin/activate
 
-# install websocket library
-
+# install standard Python WebSocket library
 pip install websocket_client
 ```
 
