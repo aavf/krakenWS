@@ -1,11 +1,11 @@
-# Virtual enviroment
-## Install and activate
+## Virtual enviroment
+### Install and activate
 In a terminal, from project folder:
 
 ```
 python3 -m venv venv
 
-. venv/bin/activate
+source venv/bin/activate
 
 # install standard Python WebSocket library
 pip install websocket_client
@@ -26,14 +26,16 @@ Copy/paste your API private (secret) key into file called "API_Private_Key".
 
 An API key is only needed if you plan to use the private API endpoints to access your Kraken account (such as balance inquiries, placing/cancelling orders, account history exports, etc).
 
-# Usage: ./krakenws feed [symbols]
+## Usage: ./krakenws.py feed [symbols]
 
-Example: ./krakenws.py trade XBT/USD
+Examples:
 
-Example: ./krakenws.py ticker XLM/USD XDG/XBT
+./krakenws.py trade XBT/USD
 
-Example: ./krakenws.py book ETH/USD DASH/USD REP/EUR
+./krakenws.py ticker XLM/USD XDG/XBT
 
-Example: ./krakenws.py openOrders
+./krakenws.py book ETH/USD DASH/USD REP/EUR
 
-Example: ./krakenws.py ownTrades
+./krakenws.py openOrders
+
+./krakenws.py ownTrades
